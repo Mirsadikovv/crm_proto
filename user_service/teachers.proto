@@ -1,0 +1,86 @@
+syntax = "proto3";
+
+option go_package = "genproto/teacher_service";
+
+package teacher_service_go;
+import "google/protobuf/empty.proto";
+
+
+service TeacherService {
+    rpc Create(CreateTeacher) returns (GetTeacher) {}
+    rpc GetByID(TeacherPrimaryKey) returns (GetTeacher) {}
+    rpc GetList(GetListTeacherRequest) returns (GetListTeacherResponse) {}
+    rpc Update(UpdateTeacher) returns (GetTeacher) {}
+    rpc Delete(TeacherPrimaryKey) returns (google.protobuf.Empty) {}
+}
+
+message TeacherPrimaryKey {
+    string id = 1;
+}
+
+message CreateTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string created_at = 14;
+    string updated_at = 15;
+    string deleted_at = 16;
+
+}
+
+message GetTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string created_at = 14;
+    string updated_at = 15;
+    string id = 16;
+}
+
+message UpdateTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string id = 14;
+}
+
+message GetListTeacherRequest {
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetListTeacherResponse {
+    int64 Count = 1;
+    repeated GetTeacher Teachers = 2;
+}

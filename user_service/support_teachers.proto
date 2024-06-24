@@ -1,0 +1,86 @@
+syntax = "proto3";
+
+option go_package = "genproto/support_teacher_service";
+
+package support_teacher_service_go;
+import "google/protobuf/empty.proto";
+
+
+service SupportTeacherService {
+    rpc Create(CreateSupportTeacher) returns (GetSupportTeacher) {}
+    rpc GetByID(SupportTeacherPrimaryKey) returns (GetSupportTeacher) {}
+    rpc GetList(GetListSupportTeacherRequest) returns (GetListSupportTeacherResponse) {}
+    rpc Update(UpdateSupportTeacher) returns (GetSupportTeacher) {}
+    rpc Delete(SupportTeacherPrimaryKey) returns (google.protobuf.Empty) {}
+}
+
+message SupportTeacherPrimaryKey {
+    string id = 1;
+}
+
+message CreateSupportTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string created_at = 14;
+    string updated_at = 15;
+    string deleted_at = 16;
+
+}
+
+message GetSupportTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string created_at = 14;
+    string updated_at = 15;
+    string id = 16;
+}
+
+message UpdateSupportTeacher {
+    string branch_id = 1;
+    string user_login = 2;
+    string birthday = 3;
+    string gender = 4;
+    string fullname = 5;
+    string email = 6;
+    string phone = 7;
+    string user_password = 8;
+    float salary = 9;
+    float ielts_score = 10;
+    int32 ielts_attempts_count = 11;
+    string start_working = 12;
+    string end_working = 13;
+    string id = 14;
+}
+
+message GetListSupportTeacherRequest {
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetListSupportTeacherResponse {
+    int64 Count = 1;
+    repeated GetSupportTeacher SupportTeachers = 2;
+}
