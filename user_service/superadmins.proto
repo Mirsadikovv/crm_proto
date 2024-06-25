@@ -35,21 +35,18 @@ message GetSuperadmin {
     string fullname = 4;
     string email = 5;
     string phone = 6;
-    string user_password = 7;
-    string created_at = 8;
-    string updated_at = 9;
-    string id = 10;
+    string created_at = 7;
+    string updated_at = 8;
+    string id = 9;
 }
 
 message UpdateSuperadmin {
-    string user_login = 1;
-    string birthday = 2;
-    string gender = 3;
-    string fullname = 4;
-    string email = 5;
-    string phone = 6;
-    string user_password = 7;
-    string id = 8;
+    string birthday = 1;
+    string gender = 2;
+    string fullname = 3;
+    string email = 4;
+    string phone = 5;
+    string id = 6;
 }
 
 message GetListSuperadminRequest {
