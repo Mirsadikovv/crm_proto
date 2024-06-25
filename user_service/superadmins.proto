@@ -26,10 +26,6 @@ message CreateSuperadmin {
     string email = 5;
     string phone = 6;
     string user_password = 7;
-    string created_at = 8;
-    string updated_at = 9;
-    string deleted_at = 10;
-
 }
 
 message GetSuperadmin {

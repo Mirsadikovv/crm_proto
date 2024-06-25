@@ -32,10 +32,6 @@ message CreateSupportTeacher {
     int32 ielts_attempts_count = 11;
     string start_working = 12;
     string end_working = 13;
-    string created_at = 14;
-    string updated_at = 15;
-    string deleted_at = 16;
-
 }
 
 message GetSupportTeacher {
