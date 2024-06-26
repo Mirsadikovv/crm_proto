@@ -25,9 +25,7 @@ message CreateEventRegistrate {
 message GetEventRegistrate {
     string event_id = 1;
     string student_id = 2;
-    string created_at = 3;
-    string updated_at = 4;
-    string id = 5;
+    string id = 3;
 }
 
 message UpdateEventRegistrate {
