@@ -23,8 +23,9 @@ message CreateGroup {
     string teacher_id = 2;
     string support_teacher_id = 3;
     string group_name = 4;
-    string started_at = 5;
-    string finished_at = 6;
+    string group_level = 5;
+    string started_at = 6;
+    string finished_at = 7;
 }
 
 message GetGroup {
@@ -32,11 +33,12 @@ message GetGroup {
     string teacher_id = 2;
     string support_teacher_id = 3;
     string group_name = 4;
-    string started_at = 5;
-    string finished_at = 6;
-    string created_at = 7;
-    string updated_at = 8;
-    string id = 9;
+    string group_level = 5;
+    string started_at = 6;
+    string finished_at = 7;
+    string created_at = 8;
+    string updated_at = 9;
+    string id = 10;
 }
 
 message UpdateGroup {
@@ -44,9 +46,10 @@ message UpdateGroup {
     string teacher_id = 2;
     string support_teacher_id = 3;
     string group_name = 4;
-    string started_at = 5;
-    string finished_at = 6;
-    string id = 7;
+    string group_level = 5;
+    string started_at = 6;
+    string finished_at = 7;
+    string id = 8;
 }
 
 message GetListGroupRequest {
