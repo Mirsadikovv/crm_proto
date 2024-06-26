@@ -9,7 +9,6 @@ import "google/protobuf/empty.proto";
 service EventRegistrateService {
     rpc Create(CreateEventRegistrate) returns (GetEventRegistrate) {}
     rpc GetByID(EventRegistratePrimaryKey) returns (GetEventRegistrate) {}
-    rpc GetList(GetListEventRegistrateRequest) returns (GetListEventRegistrateResponse) {}
     rpc Update(UpdateEventRegistrate) returns (GetEventRegistrate) {}
     rpc Delete(EventRegistratePrimaryKey) returns (google.protobuf.Empty) {}
 }
@@ -37,13 +36,4 @@ message UpdateEventRegistrate {
     string id = 3;
 }
 
-message GetListEventRegistrateRequest {
-    int64 offset = 1;
-    int64 limit = 2;
-    string search = 3;
-}
 
-message GetListEventRegistrateResponse {
-    int64 Count = 1;
-    repeated GetEventRegistrate EventRegistrates = 2;
-}
