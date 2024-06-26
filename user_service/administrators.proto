@@ -20,16 +20,15 @@ message AdministratorPrimaryKey {
 
 message CreateAdministrator {
     string branch_id = 1;
-    string user_login = 2;
-    string birthday = 3;
-    string gender = 4;
-    string fullname = 5;
-    string email = 6;
-    string phone = 7;
-    string user_password = 8;
-    float salary = 9;
-    string start_working = 10;
-    string end_working = 11;
+    string birthday = 2;
+    string gender = 3;
+    string fullname = 4;
+    string email = 5;
+    string phone = 6;
+    string user_password = 7;
+    float salary = 8;
+    string start_working = 9;
+    string end_working = 10;
 }
 
 message GetAdministrator {

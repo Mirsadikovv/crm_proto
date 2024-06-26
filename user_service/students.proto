@@ -20,16 +20,15 @@ message StudentPrimaryKey {
 
 message CreateStudent {
     string group_id = 1;
-    string user_login = 2;
-    string birthday = 3;
-    string gender = 4;
-    string fullname = 5;
-    string email = 6;
-    string phone = 7;
-    string user_password = 8;
-    float paid_sum = 9;
-    string started_at = 10;
-    string finished_at = 11;
+    string birthday = 2;
+    string gender = 3;
+    string fullname = 4;
+    string email = 5;
+    string phone = 6;
+    string user_password = 7;
+    float paid_sum = 8;
+    string started_at = 9;
+    string finished_at = 10;
 }
 
 message GetStudent {
