@@ -26,7 +26,7 @@ message CreateSchedule {
     string type_of_group = 5;
     string task = 6;
     string deadline = 7;
-    string score = 8;
+    float score = 8;
     string start_time = 9;
     string end_time = 10;
 }
@@ -39,7 +39,7 @@ message GetSchedule {
     string type_of_group = 5;
     string task = 6;
     string deadline = 7;
-    string score = 8;
+    float score = 8;
     string start_time = 9;
     string end_time = 10;
     string created_at = 11;
@@ -55,7 +55,7 @@ message UpdateSchedule {
     string type_of_group = 5;
     string task = 6;
     string deadline = 7;
-    string score = 8;
+    float score = 8;
     string start_time = 9;
     string end_time = 10;
     string id = 11;
