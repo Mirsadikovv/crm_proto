@@ -100,7 +100,7 @@ message SupportTeacherRegisterConfRequest {
     repeated CreateSupportTeacher SupportTeacher = 3;
 }
 
-message NewPassword {
+message ChangePassword {
     string UserLogin = 1;
     string OldPassword = 2;
     string NewPassword  = 3;
