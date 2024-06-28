@@ -12,6 +12,9 @@ service TeacherService {
     rpc GetList(GetListTeacherRequest) returns (GetListTeacherResponse) {}
     rpc Update(UpdateTeacher) returns (GetTeacher) {}
     rpc Delete(TeacherPrimaryKey) returns (google.protobuf.Empty) {}
+    rpc TeacherLogin (TeacherLoginRequest) returns (TeacherLoginResponse){}
+    rpc TeacherRegister (TeacherRegisterRequest) returns (google.protobuf.Empty){}
+    rpc TeacherRegisterConfirm (TeacherRegisterConfRequest) returns (TeacherLoginResponse){}
 }
 
 message TeacherPrimaryKey {

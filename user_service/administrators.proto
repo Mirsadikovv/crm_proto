@@ -12,6 +12,9 @@ service AdministratorService {
     rpc GetList(GetListAdministratorRequest) returns (GetListAdministratorResponse) {}
     rpc Update(UpdateAdministrator) returns (GetAdministrator) {}
     rpc Delete(AdministratorPrimaryKey) returns (google.protobuf.Empty) {}
+    rpc AdministratorLogin (AdministratorLoginRequest) returns (AdministratorLoginResponse){}
+    rpc AdministratorRegister (AdministratorRegisterRequest) returns (google.protobuf.Empty){}
+    rpc AdministratorRegisterConfirm (AdministratorRegisterConfRequest) returns (AdministratorLoginResponse){}
 }
 
 message AdministratorPrimaryKey {
