@@ -50,13 +50,13 @@ message UpdateSuperadmin {
 
 message SuperadminLoginRequest {
     string user_login = 1;
-    string user_password =2;
+    string user_password = 2;
 }
 
 
 message SuperadminLoginResponse {
     string acces_token = 1;
-    string refresh_token =2;
+    string refresh_token = 2;
 }
 
 

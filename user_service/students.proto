@@ -74,13 +74,13 @@ message GetListStudentResponse {
 
 message StudentLoginRequest {
     string user_login = 1;
-    string user_password =2;
+    string user_password = 2;
 }
 
 
 message StudentLoginResponse {
     string acces_token = 1;
-    string refresh_token =2;
+    string refresh_token = 2;
 }
 
 

@@ -79,13 +79,13 @@ message GetListTeacherResponse {
 
 message TeacherLoginRequest {
     string user_login = 1;
-    string user_password =2;
+    string user_password = 2;
 }
 
 
 message TeacherLoginResponse {
-    string acces_token = 1;
-    string refresh_token =2;
+    string access_token = 1;
+    string refresh_token = 2;
 }
 
 
