@@ -93,3 +93,9 @@ message ManagerRegisterConfRequest {
     string otp = 2;
     repeated CreateManager Manager = 3;
 }
+
+message NewPassword {
+    string UserLogin = 1;
+    string OldPassword = 2;
+    string NewPassword  = 3;
+}

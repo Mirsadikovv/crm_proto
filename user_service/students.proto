@@ -93,3 +93,10 @@ message StudentRegisterConfRequest {
     string otp = 2;
     repeated CreateStudent Student = 3;
 }
+
+
+message NewPassword {
+    string UserLogin = 1;
+    string OldPassword = 2;
+    string NewPassword  = 3;
+}

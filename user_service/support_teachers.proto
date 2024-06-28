@@ -99,3 +99,9 @@ message SupportTeacherRegisterConfRequest {
     string otp = 2;
     repeated CreateSupportTeacher SupportTeacher = 3;
 }
+
+message NewPassword {
+    string UserLogin = 1;
+    string OldPassword = 2;
+    string NewPassword  = 3;
+}
