@@ -46,3 +46,26 @@ message UpdateSuperadmin {
     string phone = 5;
     string id = 6;
 }
+
+
+message SuperadminLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message SuperadminLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message SuperadminRegisterRequest {
+    string mail = 1;
+}
+
+message SuperadminRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateSuperadmin Superadmin = 3;
+}

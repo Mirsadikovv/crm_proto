@@ -70,3 +70,26 @@ message GetListStudentResponse {
     int64 Count = 1;
     repeated GetStudent Students = 2;
 }
+
+
+message StudentLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message StudentLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message StudentRegisterRequest {
+    string mail = 1;
+}
+
+message StudentRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateStudent Student = 3;
+}

@@ -70,3 +70,26 @@ message GetListAdministratorResponse {
     int64 Count = 1;
     repeated GetAdministrator Administrators = 2;
 }
+
+
+message AdministratorLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message AdministratorLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message AdministratorRegisterRequest {
+    string mail = 1;
+}
+
+message AdministratorRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateAdministrator Administrator = 3;
+}

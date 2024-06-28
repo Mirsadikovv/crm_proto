@@ -70,3 +70,26 @@ message GetListManagerResponse {
     int64 Count = 1;
     repeated GetManager Managers = 2;
 }
+
+
+message ManagerLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message ManagerLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message ManagerRegisterRequest {
+    string mail = 1;
+}
+
+message ManagerRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateManager Manager = 3;
+}

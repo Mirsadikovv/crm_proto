@@ -76,3 +76,26 @@ message GetListSupportTeacherResponse {
     int64 Count = 1;
     repeated GetSupportTeacher SupportTeachers = 2;
 }
+
+
+message SupportTeacherLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message SupportTeacherLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message SupportTeacherRegisterRequest {
+    string mail = 1;
+}
+
+message SupportTeacherRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateSupportTeacher SupportTeacher = 3;
+}

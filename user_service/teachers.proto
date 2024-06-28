@@ -76,3 +76,32 @@ message GetListTeacherResponse {
     int64 Count = 1;
     repeated GetTeacher Teachers = 2;
 }
+
+message TeacherLoginRequest {
+    string user_login = 1;
+    string user_password =2;
+}
+
+
+message TeacherLoginResponse {
+    string acces_token = 1;
+    string refresh_token =2;
+}
+
+
+message TeacherRegisterRequest {
+    string mail = 1;
+}
+
+message TeacherRegisterConfRequest {
+    string mail = 1;
+    string otp = 2;
+    repeated CreateTeacher Teacher = 3;
+}
+
+
+
+
+
+
+
