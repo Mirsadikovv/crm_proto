@@ -12,6 +12,8 @@ service StudentService {
     rpc GetList(GetListStudentRequest) returns (GetListStudentResponse) {}
     rpc Update(UpdateStudent) returns (GetStudent) {}
     rpc Delete(StudentPrimaryKey) returns (google.protobuf.Empty) {}
+    rpc Check(StudentPrimaryKey) returns (CheckStudentResp){}
+
 }
 
 message StudentPrimaryKey {
@@ -118,4 +120,8 @@ message GetStudentByLogin {
     string created_at = 14;
     string updated_at = 15;
     string id = 16;
+}
+
+message CheckStudentResp {
+    bool check = 1;
 }

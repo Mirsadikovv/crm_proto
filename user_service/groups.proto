@@ -12,6 +12,7 @@ service GroupService {
     rpc GetList(GetListGroupRequest) returns (GetListGroupResponse) {}
     rpc Update(UpdateGroup) returns (GetGroup) {}
     rpc Delete(GroupPrimaryKey) returns (google.protobuf.Empty) {}
+    rpc Check(GroupPrimaryKey) returns (CheckGroupResp){}
 }
 
 message GroupPrimaryKey {
