@@ -22,14 +22,14 @@ message CreatePerfomance {
     string student_id = 1;
     string schedule_id = 2;
     bool attended = 3;
-    float task_score = 4;
+    float64 task_score = 4;
 }
 
 message GetPerfomance {
     string student_id = 1;
     string schedule_id = 2;
     bool attended = 3;
-    float task_score = 4;
+    float64 task_score = 4;
     string created_at = 5;
     string updated_at = 6;
     string id = 7;
@@ -39,7 +39,7 @@ message UpdatePerfomance {
     string student_id = 1;
     string schedule_id = 2;
     bool attended = 3;
-    float task_score = 4;
+    float64 task_score = 4;
     string id = 5;
 }
 
