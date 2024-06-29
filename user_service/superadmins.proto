@@ -11,9 +11,6 @@ service SuperadminService {
     rpc GetByID(SuperadminPrimaryKey) returns (GetSuperadmin) {}
     rpc Update(UpdateSuperadmin) returns (GetSuperadmin) {}
     rpc Delete(SuperadminPrimaryKey) returns (google.protobuf.Empty) {}
-    rpc SuperadminLogin(SuperadminLoginRequest) returns (SuperadminLoginResponse){}
-    rpc SuperadminRegister(SuperadminRegisterRequest) returns (google.protobuf.Empty){}
-    rpc SuperadminRegisterConfirm(SuperadminRegisterConfRequest) returns (SuperadminLoginResponse){}
 }
 
 message SuperadminPrimaryKey {

@@ -12,9 +12,6 @@ service ManagerService {
     rpc GetList(GetListManagerRequest) returns (GetListManagerResponse) {}
     rpc Update(UpdateManager) returns (GetManager) {}
     rpc Delete(ManagerPrimaryKey) returns (google.protobuf.Empty) {}
-    rpc ManagerLogin(ManagerLoginRequest) returns (ManagerLoginResponse){}
-    rpc ManagerRegister(ManagerRegisterRequest) returns (google.protobuf.Empty){}
-    rpc ManagerRegisterConfirm(ManagerRegisterConfRequest) returns (ManagerLoginResponse){}
 }
 
 message ManagerPrimaryKey {
