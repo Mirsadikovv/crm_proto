@@ -62,3 +62,7 @@ message GetListGroupResponse {
     int64 Count = 1;
     repeated GetGroup Groups = 2;
 }
+
+message CheckGroupResp {
+    bool check = 1;
+}

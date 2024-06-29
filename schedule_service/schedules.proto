@@ -22,43 +22,40 @@ message CreateSchedule {
     string group_id = 1;
     string lesson_id = 2;
     string classroom = 3;
-    string group_name = 4;
-    string type_of_group = 5;
-    string task = 6;
-    string deadline = 7;
-    float score = 8;
-    string start_time = 9;
-    string end_time = 10;
+    string type_of_group = 4;
+    string task = 5;
+    string deadline = 6;
+    float score = 7;
+    string start_time = 8;
+    string end_time = 9;
 }
 
 message GetSchedule {
     string group_id = 1;
     string lesson_id = 2;
     string classroom = 3;
-    string group_name = 4;
-    string type_of_group = 5;
-    string task = 6;
-    string deadline = 7;
-    float score = 8;
-    string start_time = 9;
-    string end_time = 10;
-    string created_at = 11;
-    string updated_at = 12;
-    string id = 13;
+    string type_of_group = 4;
+    string task = 5;
+    string deadline = 6;
+    float score = 7;
+    string start_time = 8;
+    string end_time = 9;
+    string created_at = 10;
+    string updated_at = 11;
+    string id = 12;
 }
 
 message UpdateSchedule {
     string group_id = 1;
     string lesson_id = 2;
     string classroom = 3;
-    string group_name = 4;
-    string type_of_group = 5;
-    string task = 6;
-    string deadline = 7;
-    float score = 8;
-    string start_time = 9;
-    string end_time = 10;
-    string id = 11;
+    string type_of_group = 6;
+    string task = 7;
+    string deadline = 8;
+    float score = 9;
+    string start_time = 10;
+    string end_time = 11;
+    string id = 12;
 }
 
 message GetListScheduleRequest {
