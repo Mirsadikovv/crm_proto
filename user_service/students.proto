@@ -13,6 +13,10 @@ service StudentService {
     rpc Update(UpdateStudent) returns (GetStudent) {}
     rpc Delete(StudentPrimaryKey) returns (google.protobuf.Empty) {}
     rpc Check(StudentPrimaryKey) returns (CheckStudentResp){}
+    rpc Login(StudentLoginRequest) returns (StudentLoginResponse){}
+    rpc Register(StudentRegisterRequest) returns (google.protobuf.Empty){}
+    rpc RegisterConfirm(StudentRegisterConfRequest) returns (StudentLoginResponse){}
+    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
 
 }
 

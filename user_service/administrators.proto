@@ -7,15 +7,15 @@ import "google/protobuf/empty.proto";
 
 
 service AdministratorService {
-    rpc Create(CreateAdministrator) returns (GetAdministrator) {}
-    rpc GetByID(AdministratorPrimaryKey) returns (GetAdministrator) {}
-    rpc GetList(GetListAdministratorRequest) returns (GetListAdministratorResponse) {}
-    rpc Update(UpdateAdministrator) returns (GetAdministrator) {}
-    rpc Delete(AdministratorPrimaryKey) returns (google.protobuf.Empty) {}
-    rpc AdministratorLogin(AdministratorLoginRequest) returns (AdministratorLoginResponse){}
-    rpc AdministratorRegister(AdministratorRegisterRequest) returns (google.protobuf.Empty){}
-    rpc AdministratorRegisterConfirm(AdministratorRegisterConfRequest) returns (AdministratorLoginResponse){}
-
+    rpc Create(CreateAdministrator) returns (GetAdministrator){}
+    rpc GetByID(AdministratorPrimaryKey) returns (GetAdministrator){}
+    rpc GetList(GetListAdministratorRequest) returns (GetListAdministratorResponse){}
+    rpc Update(UpdateAdministrator) returns (GetAdministrator){}
+    rpc Delete(AdministratorPrimaryKey) returns (google.protobuf.Empty){}
+    rpc Login(AdministratorLoginRequest) returns (AdministratorLoginResponse){}
+    rpc Register(AdministratorRegisterRequest) returns (google.protobuf.Empty){}
+    rpc RegisterConfirm(AdministratorRegisterConfRequest) returns (AdministratorLoginResponse){}
+    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
 }
 
 message AdministratorPrimaryKey {

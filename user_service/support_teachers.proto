@@ -12,6 +12,10 @@ service SupportTeacherService {
     rpc GetList(GetListSupportTeacherRequest) returns (GetListSupportTeacherResponse) {}
     rpc Update(UpdateSupportTeacher) returns (GetSupportTeacher) {}
     rpc Delete(SupportTeacherPrimaryKey) returns (google.protobuf.Empty) {}
+    rpc Login(SupportTeacherLoginRequest) returns (SupportTeacherLoginResponse) {}
+    rpc Register(SupportTeacherRegisterRequest) returns (google.protobuf.Empty) {}
+    rpc RegisterConfirm(SupportTeacherRegisterConfRequest) returns (SupportTeacherLoginResponse) {}
+    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp) {}
 }
 
 message SupportTeacherPrimaryKey {
