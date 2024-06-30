@@ -96,8 +96,8 @@ message GetScheduleWeek {
 }
 
 message GetWeekScheduleRequest {
-    int64 from_date= 1;
-    int64 to_date = 2;
+    string from_date= 1;
+    string to_date = 2;
     string search = 3;
 }
 
