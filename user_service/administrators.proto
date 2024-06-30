@@ -15,7 +15,7 @@ service AdministratorService {
     rpc Login(AdministratorLoginRequest) returns (AdministratorLoginResponse){}
     rpc Register(AdministratorRegisterRequest) returns (google.protobuf.Empty){}
     rpc RegisterConfirm(AdministratorRegisterConfRequest) returns (AdministratorLoginResponse){}
-    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
+    rpc ChangePassword(AdministratorChangePassword) returns (AdministratorChangePasswordResp){}
 }
 
 message AdministratorPrimaryKey {
