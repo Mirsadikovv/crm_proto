@@ -13,6 +13,7 @@ service ScheduleService {
     rpc Update(UpdateSchedule) returns (GetSchedule) {}
     rpc Delete(SchedulePrimaryKey) returns (google.protobuf.Empty) {}
     rpc GetStudentSchedule(SchedulePrimaryKey) returns (GetStudentSchedules) {}
+    rpc GetForWeek(GetWeekScheduleRequest) returns (GetWeekScheduleResponse) {}
 }
 
 message SchedulePrimaryKey {
