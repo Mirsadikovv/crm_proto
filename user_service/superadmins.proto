@@ -77,6 +77,10 @@ message ChangePassword {
     string NewPassword  = 3;
 }
 
+message ChangePasswordResp {
+    string comment = 1;
+}
+
 message GetSuperadminByLogin {
     string branch_id = 1;
     string user_login = 2;
@@ -90,3 +94,4 @@ message GetSuperadminByLogin {
     string updated_at = 10;
     string id = 11;
 }
+

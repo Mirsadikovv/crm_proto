@@ -124,3 +124,7 @@ message GetSupportTeacherByLogin {
     string updated_at = 15;
     string id = 16;
 }
+
+message ChangePasswordResp {
+    string comment = 1;
+}

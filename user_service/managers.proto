@@ -100,6 +100,10 @@ message ChangePassword {
     string NewPassword  = 3;
 }
 
+message ChangePasswordResp {
+    string comment = 1;
+}
+
 message GetManagerByLogin {
     string branch_id = 1;
     string user_login = 2;
