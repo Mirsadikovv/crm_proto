@@ -93,7 +93,7 @@ message GetScheduleWeek {
     int64 students_count = 8;
     string start_time = 9;
     string end_time = 10;
-    strin group_id = 11;
+    string group_id = 11;
 }
 
 message GetWeekScheduleRequest {
