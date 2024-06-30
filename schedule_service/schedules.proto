@@ -68,3 +68,15 @@ message GetListScheduleResponse {
     int64 Count = 1;
     repeated GetSchedule Schedules = 2;
 }
+
+message GetStudentSchedule {
+    string classroom = 1;
+    string type_of_group = 2;
+    string task = 3;
+    string deadline = 4;
+    double score = 5;
+    string start_time = 6;
+    string end_time = 7;
+    bool attended = 8;
+    double task_score = 9;
+}
