@@ -89,9 +89,10 @@ message GetScheduleWeek {
     string teacher_name = 4;
     string support_teacher_name = 5;
     string type_of_group = 6;
-    double students_count = 7;
-    string start_time = 8;
-    string end_time = 9;
+    string classroom = 7;
+    int64 students_count = 8;
+    string start_time = 9;
+    string end_time = 10;
 }
 
 message GetWeekScheduleRequest {
