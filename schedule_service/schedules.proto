@@ -23,9 +23,9 @@ message CreateSchedule {
     string lesson_id = 2;
     string classroom = 3;
     string type_of_group = 4;
-    float task = 5;
+    double task = 5;
     string deadline = 6;
-    float score = 7;
+    double score = 7;
     string start_time = 8;
     string end_time = 9;
 }
@@ -37,7 +37,7 @@ message GetSchedule {
     string type_of_group = 4;
     string task = 5;
     string deadline = 6;
-    float score = 7;
+    double score = 7;
     string start_time = 8;
     string end_time = 9;
     string created_at = 10;
@@ -50,9 +50,9 @@ message UpdateSchedule {
     string lesson_id = 2;
     string classroom = 3;
     string type_of_group = 6;
-    float task = 7;
+    double task = 7;
     string deadline = 8;
-    float score = 9;
+    double score = 9;
     string start_time = 10;
     string end_time = 11;
     string id = 12;
