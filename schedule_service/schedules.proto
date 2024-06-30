@@ -12,7 +12,7 @@ service ScheduleService {
     rpc GetList(GetListScheduleRequest) returns (GetListScheduleResponse) {}
     rpc Update(UpdateSchedule) returns (GetSchedule) {}
     rpc Delete(SchedulePrimaryKey) returns (google.protobuf.Empty) {}
-    rpc GetStudentSchedule(SchedulePrimaryKey) returns (GetStudentSchedule) {}
+    rpc GetStudentSchedule(SchedulePrimaryKey) returns (GetStudentSchedules) {}
 }
 
 message SchedulePrimaryKey {
@@ -70,7 +70,7 @@ message GetListScheduleResponse {
     repeated GetSchedule Schedules = 2;
 }
 
-message GetStudentSchedule {
+message GetStudentSchedules {
     string classroom = 1;
     string type_of_group = 2;
     string task = 3;
