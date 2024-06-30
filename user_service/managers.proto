@@ -15,7 +15,7 @@ service ManagerService {
     rpc Login(ManagerLoginRequest) returns (ManagerLoginResponse){}
     rpc Register(ManagerRegisterRequest) returns (google.protobuf.Empty){}
     rpc RegisterConfirm(ManagerRegisterConfRequest) returns (ManagerLoginResponse){}
-    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
+    rpc ChangePassword(ManagerChangePassword) returns (ManagerChangePasswordResp){}
 }
 
 message ManagerPrimaryKey {
@@ -98,13 +98,13 @@ message ManagerRegisterConfRequest {
     repeated CreateManager Manager = 3;
 }
 
-message ChangePassword {
+message ManagerChangePassword {
     string UserLogin = 1;
     string OldPassword = 2;
     string NewPassword  = 3;
 }
 
-message ChangePasswordResp {
+message ManagerChangePasswordResp {
     string comment = 1;
 }
 

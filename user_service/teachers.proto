@@ -15,7 +15,7 @@ service TeacherService {
     rpc Login(TeacherLoginRequest) returns (TeacherLoginResponse){}
     rpc Register(TeacherRegisterRequest) returns (google.protobuf.Empty){}
     rpc RegisterConfirm(TeacherRegisterConfRequest) returns (TeacherLoginResponse){}
-    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
+    rpc ChangePassword(TeacherChangePassword) returns (TeacherChangePasswordResp){}
 }
 
 message TeacherPrimaryKey {
@@ -103,13 +103,13 @@ message TeacherRegisterConfRequest {
     repeated CreateTeacher Teacher = 3;
 }
 
-message ChangePassword {
+message TeacherChangePassword {
     string UserLogin = 1;
     string OldPassword = 2;
     string NewPassword  = 3;
 }
 
-message ChangePasswordResp {
+message TeacherChangePasswordResp {
     string comment = 1;
 }
 

@@ -16,7 +16,7 @@ service StudentService {
     rpc Login(StudentLoginRequest) returns (StudentLoginResponse){}
     rpc Register(StudentRegisterRequest) returns (google.protobuf.Empty){}
     rpc RegisterConfirm(StudentRegisterConfRequest) returns (StudentLoginResponse){}
-    rpc ChangePassword(ChangePassword) returns (ChangePasswordResp){}
+    rpc ChangePassword(StudentChangePassword) returns (StudentChangePasswordResp){}
 
 }
 
@@ -101,13 +101,13 @@ message StudentRegisterConfRequest {
 }
 
 
-message ChangePassword {
+message StudentChangePassword {
     string UserLogin = 1;
     string OldPassword = 2;
     string NewPassword  = 3;
 }
 
-message ChangePasswordResp {
+message StudentChangePasswordResp {
     string comment = 1;
 }
 
