@@ -81,3 +81,26 @@ message GetStudentSchedules {
     bool attended = 8;
     double task_score = 9;
 }
+
+message GetScheduleWeek {
+    string group_name = 1;
+    string group_type = 2;
+    string branch_name = 3;
+    string teacher_name = 4;
+    string support_teacher_name = 5;
+    string type_of_group = 6;
+    double students_count = 7;
+    string start_time = 8;
+    string end_time = 9;
+}
+
+message GetWeekScheduleRequest {
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetWeekScheduleResponse {
+    int64 Count = 1;
+    repeated GetScheduleWeek Schedules = 2;
+}
