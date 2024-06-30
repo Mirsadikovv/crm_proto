@@ -23,7 +23,7 @@ message CreateSchedule {
     string lesson_id = 2;
     string classroom = 3;
     string type_of_group = 4;
-    string task = 5;
+    float task = 5;
     string deadline = 6;
     float score = 7;
     string start_time = 8;
@@ -50,7 +50,7 @@ message UpdateSchedule {
     string lesson_id = 2;
     string classroom = 3;
     string type_of_group = 6;
-    string task = 7;
+    float task = 7;
     string deadline = 8;
     float score = 9;
     string start_time = 10;
