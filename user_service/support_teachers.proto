@@ -26,8 +26,8 @@ message CreateSupportTeacher {
     string email = 5;
     string phone = 6;
     string user_password = 7;
-    float salary = 8;
-    float ielts_score = 9;
+    double salary = 8;
+    double ielts_score = 9;
     int32 ielts_attempts_count = 10;
     string start_working = 11;
     string end_working = 12;
@@ -41,8 +41,8 @@ message GetSupportTeacher {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
-    float ielts_score = 9;
+    double salary = 8;
+    double ielts_score = 9;
     int32 ielts_attempts_count = 10;
     string start_working = 11;
     string end_working = 12;
@@ -58,8 +58,8 @@ message UpdateSupportTeacher {
     string fullname = 4;
     string email = 5;
     string phone = 6;
-    float salary = 7;
-    float ielts_score = 8;
+    double salary = 7;
+    double ielts_score = 8;
     int32 ielts_attempts_count = 9;
     string start_working = 10;
     string end_working = 11;
@@ -114,8 +114,8 @@ message GetSupportTeacherByLogin {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
-    float ielts_score = 9;
+    double salary = 8;
+    double ielts_score = 9;
     int32 ielts_attempts_count = 10;
     string user_password = 11;
     string start_working = 12;

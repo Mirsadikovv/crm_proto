@@ -26,7 +26,7 @@ message CreateManager {
     string email = 5;
     string phone = 6;
     string user_password = 7;
-    float salary = 8;
+    double salary = 8;
     string start_working = 9;
     string end_working = 10;
 }
@@ -39,7 +39,7 @@ message GetManager {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
+    double salary = 8;
     string start_working = 9;
     string end_working = 10;
     string created_at = 11;
@@ -54,7 +54,7 @@ message UpdateManager {
     string fullname = 4;
     string email = 5;
     string phone = 6;
-    float salary = 7;
+    double salary = 7;
     string start_working = 8;
     string end_working = 9;
     string id = 10;
@@ -108,13 +108,11 @@ message GetManagerByLogin {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
-    float ielts_score = 9;
-    int32 ielts_attempts_count = 10;
-    string user_password = 11;
-    string start_working = 12;
-    string end_working = 13;
-    string created_at = 14;
-    string updated_at = 15;
-    string id = 16;
+    double salary = 8;
+    string user_password = 9;
+    string start_working = 10;
+    string end_working = 11;
+    string created_at = 12;
+    string updated_at = 13;
+    string id = 14;
 }

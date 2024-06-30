@@ -85,13 +85,8 @@ message GetSuperadminByLogin {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
-    float ielts_score = 9;
-    int32 ielts_attempts_count = 10;
-    string user_password = 11;
-    string start_working = 12;
-    string end_working = 13;
-    string created_at = 14;
-    string updated_at = 15;
-    string id = 16;
+    string user_password = 8;
+    string created_at = 9;
+    string updated_at = 10;
+    string id = 11;
 }

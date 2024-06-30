@@ -28,7 +28,7 @@ message CreateStudent {
     string email = 5;
     string phone = 6;
     string user_password = 7;
-    float paid_sum = 8;
+    double paid_sum = 8;
     string started_at = 9;
     string finished_at = 10;
 }
@@ -41,7 +41,7 @@ message GetStudent {
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float paid_sum = 8;
+    double paid_sum = 8;
     string started_at = 9;
     string finished_at = 10;
     string created_at = 11;
@@ -56,7 +56,7 @@ message UpdateStudent {
     string fullname = 4;
     string email = 5;
     string phone = 6;
-    float paid_sum = 7;
+    double paid_sum = 7;
     string started_at = 8;
     string finished_at = 9;
     string id = 10;
@@ -104,22 +104,19 @@ message ChangePassword {
 }
 
 message GetStudentByLogin {
-    string branch_id = 1;
+    string group_id = 1;
     string user_login = 2;
     string birthday = 3;
     string gender = 4;
     string fullname = 5;
     string email = 6;
     string phone = 7;
-    float salary = 8;
-    float ielts_score = 9;
-    int32 ielts_attempts_count = 10;
-    string user_password = 11;
-    string start_working = 12;
-    string end_working = 13;
-    string created_at = 14;
-    string updated_at = 15;
-    string id = 16;
+    string user_password = 8;
+    string started_at = 9;
+    string finished_at = 10;
+    string created_at = 11;
+    string updated_at = 12;
+    string id = 13;
 }
 
 message CheckStudentResp {
