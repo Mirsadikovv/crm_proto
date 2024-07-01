@@ -43,3 +43,14 @@ message GetStudentEventRegistrateResponse {
     string branch_id = 4;
 }
 
+
+message GetListEventRegistrateRequest {
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetListEventRegistrateResponse {
+    int64 Count = 1;
+    repeated GetStudentEventRegistrateResponse Events = 2;
+}
