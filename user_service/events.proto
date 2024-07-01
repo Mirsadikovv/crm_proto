@@ -12,7 +12,6 @@ service EventService {
     rpc GetList(GetListEventRequest) returns (GetListEventResponse) {}
     rpc Update(UpdateEvent) returns (GetEvent) {}
     rpc Delete(EventPrimaryKey) returns (google.protobuf.Empty) {}
-    rpc GetStudentEvent(EventPrimaryKey) returns (GetStudentEventResponse) {}
 }
 
 message EventPrimaryKey {
@@ -55,9 +54,3 @@ message GetListEventResponse {
     repeated GetEvent Events = 2;
 }
 
-message GetStudentEventResponse {
-    string topic = 1;
-    string start_time = 2;
-    string end_time = 3;
-    string branch_id = 4;
-}

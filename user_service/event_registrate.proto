@@ -11,7 +11,7 @@ service EventRegistrateService {
     rpc GetByID(EventRegistratePrimaryKey) returns (GetEventRegistrate) {}
     rpc Update(UpdateEventRegistrate) returns (GetEventRegistrate) {}
     rpc Delete(EventRegistratePrimaryKey) returns (google.protobuf.Empty) {}
-    rpc GetStudentEvent(EventRegistratePrimaryKey) returns (GetStudentEventRegistrateResponse) {}
+    rpc GetStudentEvent(GetListEventRegistrateRequest) returns (GetListEventRegistrateResponse) {}
 
 }
 
