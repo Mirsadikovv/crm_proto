@@ -11,6 +11,8 @@ service EventRegistrateService {
     rpc GetByID(EventRegistratePrimaryKey) returns (GetEventRegistrate) {}
     rpc Update(UpdateEventRegistrate) returns (GetEventRegistrate) {}
     rpc Delete(EventRegistratePrimaryKey) returns (google.protobuf.Empty) {}
+    rpc GetStudentEvent(EventRegistratePrimaryKey) returns (GetStudentEventRegistrateResponse) {}
+
 }
 
 message EventRegistratePrimaryKey {
@@ -34,4 +36,10 @@ message UpdateEventRegistrate {
     string id = 3;
 }
 
+message GetStudentEventRegistrateResponse {
+    string topic = 1;
+    string start_time = 2;
+    string end_time = 3;
+    string branch_id = 4;
+}
 
